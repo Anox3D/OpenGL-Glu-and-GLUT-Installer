@@ -2,8 +2,8 @@
 CD /D "%~dp0"
 TITLE OpenGL, Glu and Glut 32 bits Installer
 ECHO Installation started...
-SET PATH=%SystemDrive%\Windows\System32
-FOR %%A in (opengl32.dll glu32.dll glut32.dll) DO COPY /-Y "%%A" "%PATH%" && (ECHO COPIED "%%A" to "%PATH%") || (
+SET PATH=%SystemRoot%\System32
+FOR %%A in (opengl32.dll glu32.dll glut32.dll) DO COPY /-Y "%%A" "%PATH%" && (ECHO Copied "%%A" to "%PATH%") || (
 ECHO ERROR: Couldn't copy "%%A" to "%PATH%"
 SET EL=Something went wrong
 )
