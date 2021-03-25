@@ -1,15 +1,12 @@
 @ECHO OFF
+CD /D "%~dp0"
 TITLE OpenGL, Glu and Glut 64 bits Installer
-ECHO The installer will start soon...
-:: opengl32.dll
-MOVE /-Y opengl32.dll C:\Windows\SysWOW64\
-ECHO Moved opengl32.dll to C:\Windows\SysWOW64\.
-:: glu32.dll
-MOVE /-Y glu32.dll C:\Windows\SysWOW64\
-ECHO Moved glu32.dll to C:\Windows\SysWOW64\.
-:: glut32.dll
-MOVE /-Y glut32.dll C:\Windows\SysWOW64\
-ECHO Moved glut32.dll to C:\Windows\SysWOW64\.
-:: Final message
-ECHO Everything has been installed correctly, you can now close the window.
-PAUSE
+ECHO Installation started...
+SET PATH=%SystemDrive%\Windows\SysWOW64
+FOR %%A in (opengl32.dll glu32.dll glut32.dll) DO COPY /-Y "%%A" "%PATH%" && (ECHO COPIED "%%A" to "%PATH%") || (
+ECHO ERROR: Couldn't copy "%%A" to "%PATH%"
+SET EL=Something went wrong
+)
+IF NOT DEFINED EL SET EL=Everything has been installed correctly
+ECHO %EL%. Press any key to quit...
+PAUSE >NUL
