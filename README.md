@@ -1,7 +1,7 @@
 # OpenGL, Glu and GLUT Installer
 A easy-to-use program to install OpenGL, Glu and GLUT faster and simpler.
 
-Thanks very much to [@MATHieu Squidward 🤗](https://discord.com/users/696692880772956180) on [Program Dream](https://discord.gg/gfmaxgE) for writing a better version of my code!
+Thanks very much to [@Mathieu Squidward 🤗](https://discord.com/users/696692880772956180) on [Program Dream](https://discord.gg/gfmaxgE) for writing a better version of my code!
 
 # How to use program
 First, you need to download the ZIP file. If you have a 32 bits system, download the 32 bits installer and if you have a 64 bits system, download the 64 bits installer.  
