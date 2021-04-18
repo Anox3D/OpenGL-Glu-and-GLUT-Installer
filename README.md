@@ -16,3 +16,6 @@ OpenGL, Glu and GLUT are now installed! You can delete the files you downloaded.
 
 # Video
 Click on the image to see the video.
+<a target="_blank" href="https://user-images.githubusercontent.com/71902913/115151707-59e5a100-a06e-11eb-9174-80a71d754690.mp4">
+  <img name="video" src="https://user-images.githubusercontent.com/71902913/115151649-17bc5f80-a06e-11eb-8404-acc2c5a1bdbb.png" height="500">
+</a>
